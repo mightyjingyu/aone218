@@ -212,6 +212,106 @@ body {
   /* No glow in light mode, clean text */
 }
 
+/* Landing: Apple liquid glass — 전문 홈페이지급 */
+.landing-glass-nav {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(24px) saturate(200%);
+  -webkit-backdrop-filter: blur(24px) saturate(200%);
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.08);
+  box-shadow:
+    0 1px 0 0 rgba(255, 255, 255, 0.9) inset,
+    0 1px 2px rgba(0, 0, 0, 0.03);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+.landing-glass-nav.scrolled {
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow:
+    0 1px 0 0 rgba(255, 255, 255, 0.95) inset,
+    0 2px 8px rgba(0, 0, 0, 0.04);
+}
+.landing-glass-panel {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border: 0.5px solid rgba(255, 255, 255, 0.8);
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.04),
+    0 2px 4px rgba(0, 0, 0, 0.02),
+    0 24px 48px -12px rgba(0, 0, 0, 0.08),
+    0 1px 0 0 rgba(255, 255, 255, 0.6) inset;
+  border-radius: 20px;
+}
+.landing-glass-card {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(20px) saturate(170%);
+  -webkit-backdrop-filter: blur(20px) saturate(170%);
+  border: 0.5px solid rgba(0, 0, 0, 0.06);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.5),
+    0 2px 8px rgba(0, 0, 0, 0.03),
+    0 1px 0 0 rgba(255, 255, 255, 0.4) inset;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-radius: 18px;
+}
+.landing-glass-card:hover {
+  background: rgba(255, 255, 255, 0.78);
+  border-color: rgba(0, 0, 0, 0.07);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.6),
+    0 12px 32px -8px rgba(0, 0, 0, 0.06),
+    0 1px 0 0 rgba(255, 255, 255, 0.5) inset;
+  transform: translateY(-3px);
+}
+.landing-cta-black {
+  background: #111;
+  color: #fff;
+  border: none;
+  box-shadow:
+    0 1px 0 0 rgba(255, 255, 255, 0.08) inset,
+    0 2px 8px rgba(0, 0, 0, 0.12),
+    0 4px 16px -4px rgba(0, 0, 0, 0.15);
+  transition: all 0.28s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-radius: 14px;
+}
+.landing-cta-black:hover {
+  background: #000;
+  box-shadow:
+    0 1px 0 0 rgba(255, 255, 255, 0.06) inset,
+    0 4px 16px rgba(0, 0, 0, 0.18),
+    0 8px 24px -8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px) scale(1.01);
+}
+.landing-cta-black:active {
+  transform: translateY(0) scale(0.99);
+}
+.landing-glass-btn {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 0.5px solid rgba(0, 0, 0, 0.08);
+  box-shadow:
+    0 1px 0 0 rgba(255, 255, 255, 0.5) inset,
+    0 1px 3px rgba(0, 0, 0, 0.04);
+  color: #1a1a1a;
+  transition: all 0.28s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-radius: 14px;
+}
+.landing-glass-btn:hover {
+  background: rgba(255, 255, 255, 0.92);
+  border-color: rgba(0, 0, 0, 0.1);
+  box-shadow:
+    0 1px 0 0 rgba(255, 255, 255, 0.6) inset,
+    0 4px 16px -4px rgba(0, 0, 0, 0.06);
+  transform: translateY(-1px);
+}
+.landing-section-subtle {
+  background: linear-gradient(180deg, rgba(250, 250, 252, 0.9) 0%, rgba(255, 255, 255, 0) 100%);
+}
+.landing-hero-glow {
+  background: radial-gradient(ellipse 100% 80% at 70% 20%, rgba(0, 0, 0, 0.02) 0%, transparent 55%),
+    radial-gradient(ellipse 80% 60% at 20% 70%, rgba(0, 0, 0, 0.015) 0%, transparent 50%);
+}
+
 /* TipTap Editor Styles */
 .tiptap-readonly-dark .ProseMirror,
 .tiptap-readonly-dark .ProseMirror * {
